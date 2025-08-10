@@ -10,33 +10,42 @@ import {
   ExternalLink
 } from 'lucide-react';
 
-const footerLinks = {
+interface NavLink { name: string; href: string; external: boolean; icon?: React.ComponentType<any>; }
+
+type FooterLinkSections = {
+  product: NavLink[];
+  resources: NavLink[];
+  community: NavLink[];
+  integrations: NavLink[];
+};
+
+const footerLinks: FooterLinkSections = {
   product: [
-    { name: 'Download GPT-OSS', href: '#download', icon: Download },
-    { name: 'Features', href: '#features' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Benchmarks', href: '#benchmarks' },
-    { name: 'System Requirements', href: '#requirements' }
+    { name: 'Download GPT-OSS', href: '#download', icon: Download, external: false },
+{ name: 'Features', href: '#features', external: false, icon: undefined },
+{ name: 'Pricing', href: '#pricing', external: false, icon: undefined },
+{ name: 'Benchmarks', href: '#benchmarks', external: false, icon: undefined },
+{ name: 'System Requirements', href: '#requirements', external: false, icon: undefined }
   ],
   resources: [
-    { name: 'Installation Guide', href: '#installation' },
-    { name: 'API Reference', href: '#api' },
-    { name: 'Troubleshooting', href: '#troubleshooting' },
-    { name: 'Best Practices', href: '#best-practices' }
+{ name: 'Installation Guide', href: '#installation', external: false, icon: undefined },
+{ name: 'API Reference', href: '#api', external: false, icon: undefined },
+{ name: 'Troubleshooting', href: '#troubleshooting', external: false, icon: undefined },
+{ name: 'Best Practices', href: '#best-practices', external: false, icon: undefined }
   ],
   community: [
     { name: 'GitHub Repository', href: 'https://github.com/openai/gpt-oss', icon: Github, external: true },
-    { name: 'Discord Community', href: '#discord', icon: MessageCircle },
+{ name: 'Discord Community', href: '#discord', icon: MessageCircle, external: false },
     { name: 'Reddit Discussion', href: 'https://reddit.com/r/gptoss', icon: ExternalLink, external: true },
-    { name: 'Stack Overflow', href: '#stackoverflow', external: true },
-    { name: 'Contributor Guide', href: '#contributing' }
+{ name: 'Stack Overflow', href: '#stackoverflow', external: true, icon: undefined },
+{ name: 'Contributor Guide', href: '#contributing', icon: undefined, external: false }
   ],
   integrations: [
     { name: 'Try Playground', href: 'https://gpt-oss.com/', external: true },
     { name: 'GPT-OSS-120B Model', href: 'https://huggingface.co/openai/gpt-oss-120b', external: true },
     { name: 'GPT-OSS-20B Model', href: 'https://huggingface.co/openai/gpt-oss-20b', external: true },
-    { name: 'Ollama Setup', href: '#ollama' },
-    { name: 'LM Studio', href: '#lmstudio' }
+    { name: 'Ollama Setup', href: '#ollama', external: false, icon: undefined },
+    { name: 'LM Studio', href: '#lmstudio', external: false, icon: undefined }
   ]
 };
 
