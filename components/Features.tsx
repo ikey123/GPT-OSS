@@ -14,38 +14,38 @@ import {
 const features = [
   {
     icon: Brain,
-    title: 'Advanced Reasoning Model',
-    description: 'GPT-OSS features cutting-edge reasoning capabilities with mixture of experts architecture, delivering superior performance for complex problem-solving and agentic AI applications.',
+    title: 'GPT OSS Advanced Reasoning Model',
+    description: 'GPT OSS features cutting-edge chain of thought reasoning with mixture of experts architecture. Perfect for agentic AI applications, this reasoning model delivers superior performance for complex problem-solving tasks.',
     gradient: 'from-blue-500 to-cyan-500'
   },
   {
     icon: Shield,
     title: 'Enterprise AI Solution',
-    description: 'Deploy private AI models with complete data sovereignty. Our enterprise solution ensures HIPAA compliance and meets the highest security standards for business applications.',
+    description: 'Deploy GPT OSS for business with complete data sovereignty. Our enterprise AI solution ensures HIPAA compliant AI deployment and meets the highest security standards for private AI model implementations.',
     gradient: 'from-green-500 to-emerald-500'
   },
   {
     icon: Zap,
     title: 'Optimized Performance',
-    description: 'Experience lightning-fast inference with MXFP4 quantization and harmony response format. Our GPT-OSS optimization tips ensure maximum efficiency on your hardware.',
+    description: 'Experience lightning-fast inference with MXFP4 quantization and harmony response format. Our GPT OSS optimization tips and system requirements guide ensure maximum efficiency on your hardware.',
     gradient: 'from-purple-500 to-pink-500'
   },
   {
     icon: Code,
-    title: 'Developer-Friendly',
-    description: 'Built for developers with comprehensive APIs, tool calling capabilities, and seamless integration with popular platforms like Ollama, LM Studio, and Hugging Face.',
+    title: 'Developer-Friendly Integration',
+    description: 'Built for developers with tool calling AI capabilities and comprehensive APIs. Seamless GPT OSS Ollama setup, GPT OSS LM Studio integration, and GPT OSS HuggingFace compatibility included.',
     gradient: 'from-orange-500 to-red-500'
   },
   {
     icon: Globe,
-    title: 'Open Source Freedom',
-    description: 'Licensed under Apache 2.0, GPT-OSS provides complete transparency and freedom to modify, distribute, and commercialize. No vendor lock-in, no hidden restrictions.',
+    title: 'Open Source GPT Freedom',
+    description: 'Licensed under GPT OSS Apache license, providing complete transparency and freedom to modify, distribute, and commercialize. No vendor lock-in, no hidden restrictions for this open source GPT.',
     gradient: 'from-teal-500 to-green-500'
   },
   {
     icon: Lock,
-    title: 'On-Premise Deployment',
-    description: 'Run local LLM instances entirely within your infrastructure. Perfect for organizations requiring complete data privacy and regulatory compliance.',
+    title: 'On Premise AI Deployment',
+    description: 'Run local LLM instances entirely within your infrastructure. Perfect for organizations requiring complete data privacy and regulatory compliance with on premise AI deployment capabilities.',
     gradient: 'from-indigo-500 to-blue-500'
   }
 ];
@@ -57,11 +57,12 @@ export default function Features() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-            Why Choose GPT-OSS?
+            Why GPT OSS is the Best Open Source LLM?
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Experience the perfect balance of power, privacy, and performance with our 
-            open source GPT alternative. Built for enterprises, loved by developers.
+            Discover what makes GPT OSS the perfect ChatGPT alternative. Our enterprise AI solution 
+            combines advanced reasoning capabilities with complete transparency, making it ideal for 
+            businesses seeking a private AI model with HIPAA compliant AI features.
           </p>
         </div>
 
@@ -94,7 +95,7 @@ export default function Features() {
         <div className="text-center mt-16">
           <div className="inline-flex items-center px-6 py-3 bg-blue-50 border border-blue-200 rounded-full text-blue-700 font-medium">
             <Cpu className="w-5 h-5 mr-2" />
-            Ready to experience GPT-OSS capabilities?
+            Ready to experience GPT OSS capabilities and performance?
           </div>
         </div>
       </div>

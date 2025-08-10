@@ -19,7 +19,6 @@ const footerLinks = {
     { name: 'System Requirements', href: '#requirements' }
   ],
   resources: [
-    { name: 'Documentation', href: 'https://docs.gpt-oss.org', icon: BookOpen, external: true },
     { name: 'Installation Guide', href: '#installation' },
     { name: 'API Reference', href: '#api' },
     { name: 'Troubleshooting', href: '#troubleshooting' },
@@ -33,11 +32,11 @@ const footerLinks = {
     { name: 'Contributor Guide', href: '#contributing' }
   ],
   integrations: [
+    { name: 'Try Playground', href: 'https://gpt-oss.com/', external: true },
+    { name: 'GPT-OSS-120B Model', href: 'https://huggingface.co/openai/gpt-oss-120b', external: true },
+    { name: 'GPT-OSS-20B Model', href: 'https://huggingface.co/openai/gpt-oss-20b', external: true },
     { name: 'Ollama Setup', href: '#ollama' },
-    { name: 'LM Studio', href: '#lmstudio' },
-    { name: 'Hugging Face', href: 'https://huggingface.co/gpt-oss', external: true },
-    { name: 'VLLM Integration', href: '#vllm' },
-    { name: 'Docker Deployment', href: '#docker' }
+    { name: 'LM Studio', href: '#lmstudio' }
   ]
 };
 
@@ -46,9 +45,9 @@ export default function Footer() {
     <footer className="bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-6 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand Section */}
-          <div className="lg:col-span-2">
+          <div className="md:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">GO</span>
@@ -56,8 +55,9 @@ export default function Footer() {
               <span className="font-bold text-2xl">GPT-OSS</span>
             </div>
             <p className="text-slate-300 leading-relaxed mb-6">
-              The premier open source GPT alternative, delivering enterprise-grade AI capabilities 
-              with complete transparency and data sovereignty. Join the revolution in private AI deployment.
+              GPT OSS: The premier open source GPT alternative, delivering enterprise-grade AI capabilities 
+              with complete transparency and data sovereignty. Our free GPT model supports gpt-oss-120b and gpt-oss-20b 
+              variants, making it the best ChatGPT alternative for businesses requiring HIPAA compliant AI solutions.
             </p>
             
             {/* Newsletter */}
@@ -190,12 +190,19 @@ export default function Footer() {
             <div className="text-slate-400">
               © 2024 GPT-OSS. All rights reserved. Licensed under Apache 2.0.
             </div>
-            <div className="flex space-x-6 text-sm text-slate-400">
+            <div className="flex flex-wrap justify-center lg:justify-end gap-x-6 gap-y-2 text-sm text-slate-400">
               <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
               <a href="#security" className="hover:text-white transition-colors">Security</a>
               <a href="#status" className="hover:text-white transition-colors">Status</a>
             </div>
+          </div>
+          
+          {/* Disclaimer */}
+          <div className="mt-6 pt-6 border-t border-slate-800">
+            <p className="text-center text-sm text-slate-500 italic">
+              Disclaimer: This website is not affiliated with OpenAI. This is an independent community project created for educational and informational purposes only.
+            </p>
           </div>
         </div>
       </div>

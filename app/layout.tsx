@@ -5,12 +5,12 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'GPT-OSS - Open Source GPT Alternative | Free AI Model with Enterprise Features',
-  description: 'GPT-OSS delivers advanced open source GPT capabilities with complete privacy. Download our free AI model featuring 120B parameters, mixture of experts, and enterprise-ready deployment options.',
-  keywords: 'GPT-OSS, open source GPT, OpenAI open source, free GPT model, reasoning model, ChatGPT alternative, local LLM, enterprise AI solution, private AI model, HIPAA compliant AI',
+  title: 'Download GPT OSS: Free Open Source ChatGPT Alternative',
+  description: 'Download GPT OSS, the free open-source alternative to ChatGPT. Get the powerful 120B model for enterprise AI or the 20B for local LLM deployment. 100% private.',
+  keywords: '',
   openGraph: {
-    title: 'GPT-OSS - The Future of Open Source AI',
-    description: 'Advanced open source GPT model with enterprise features, complete data sovereignty, and local deployment capabilities.',
+    title: 'GPT OSS - OpenAI Open Source AI Model Revolution',
+    description: 'Advanced GPT OSS open source AI model with enterprise features, complete data sovereignty, and local LLM deployment capabilities. Download gpt-oss-120b and gpt-oss-20b free GPT models today.',
     type: 'website',
   },
   robots: {
@@ -24,8 +24,34 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'GPT OSS',
+    alternateName: ['GPT-OSS', 'gpt oss', 'openai oss', 'gpt open source'],
+    description: 'GPT OSS is the best open source GPT alternative featuring gpt-oss-120b and gpt-oss-20b models with advanced reasoning, mixture of experts architecture, and enterprise AI solution capabilities.',
+    applicationCategory: 'AI Model',
+    operatingSystem: 'Cross-platform',
+    license: 'Apache 2.0',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: 'Free GPT model download'
+    },
+    keywords: 'how to run GPT OSS, GPT OSS installation guide, GPT OSS vs ChatGPT, GPT OSS vs LLaMA, GPT OSS for business, MXFP4 quantization, harmony response format, GPT OSS medical AI, GPT OSS benchmarks, GPT OSS performance review, GPT OSS optimization tips, openai gpt oss 120b, gpt oss requirements, gpt oss huggingface, gpt oss benchmark, vllm gpt oss, gpt oss reddit, gpt oss vllm docker issues, gpt oss 20b benchmarks'
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
+      </head>
       <body className={inter.className}>
         {children}
       </body>

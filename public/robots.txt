@@ -1,0 +1,14 @@
+# GPT-OSS Model Space - Robots.txt
+# The Open Source ChatGPT Alternative
+
+User-Agent: *
+Allow: /
+
+
+
+# 站点地图
+Sitemap: https://gpt-oss-model.space/sitemap.xml
+
+# 主机信息
+Host: gpt-oss-model.space
+

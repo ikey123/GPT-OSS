@@ -81,33 +81,34 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-xl">
             <nav className="flex flex-col space-y-4 p-6">
-              <a href="#features" className="text-slate-700 hover:text-blue-600 font-medium">
+              <a href="#features" onClick={() => setIsMenuOpen(false)} className="text-slate-700 hover:text-blue-600 font-medium">
                 Features
               </a>
-              <a href="#how-it-works" className="text-slate-700 hover:text-blue-600 font-medium">
+              <a href="#how-it-works" onClick={() => setIsMenuOpen(false)} className="text-slate-700 hover:text-blue-600 font-medium">
                 How It Works
               </a>
-              <a href="#pricing" className="text-slate-700 hover:text-blue-600 font-medium">
+              <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="text-slate-700 hover:text-blue-600 font-medium">
                 Pricing
               </a>
-              <a href="#faq" className="text-slate-700 hover:text-blue-600 font-medium">
+              <a href="#faq" onClick={() => setIsMenuOpen(false)} className="text-slate-700 hover:text-blue-600 font-medium">
                 FAQ
               </a>
               <a 
                 href="https://github.com/openai/gpt-oss" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-slate-700 hover:text-blue-600 font-medium flex items-center space-x-1"
               >
                 <Github className="w-4 h-4" />
                 <span>GitHub</span>
               </a>
               <div className="flex flex-col space-y-3 pt-4 border-t border-slate-200">
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" onClick={() => setIsMenuOpen(false)}>
                   <Download className="w-4 h-4 mr-2" />
                   Download GPT-OSS
                 </Button>
-                <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600">
+                <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600" onClick={() => setIsMenuOpen(false)}>
                   Get Started
                 </Button>
               </div>
